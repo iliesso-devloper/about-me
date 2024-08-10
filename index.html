@@ -4,25 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
     <title>صفحة البداية</title>
-      <link rel="icon" type="image/x-icon" href="11.png">
+    <link rel="icon" type="image/x-icon" href="11.png">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #343a40;
+            font-family: 'Tajawal', sans-serif;
+            background-color: #fff;
+            /* Background color set to black */
+            color: #000;
+            /* Text color set to white for better visibility */
             display: flex;
+            flex-direction: column;
+            /* Align items in column for better layout */
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            text-align: center;
+            /* Center-align text */
         }
         
         .logo {
             max-width: 250px;
             max-height: 250px;
-            opacity: 0; /* Initially hidden */
-            animation: fadeIn 2s ease-in-out forwards; /* Animation with forwards to keep the final state */
+            opacity: 0;
+            /* Initially hidden */
+            animation: fadeIn 2s ease-in-out forwards;
+            /* Animation duration set to 2 seconds */
         }
         
         @keyframes fadeIn {
@@ -33,20 +42,31 @@
                 opacity: 1;
             }
         }
+        
+        p {
+            font-size: 3.2em;
+            /* Increase font size for better readability */
+            margin-top: 20px;
+            /* Add spacing between logo and text */
+            color: #000;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container text-center">
+    <div class="container">
         <img class="logo" src="11.png" alt="Logo">
         <p>زيارتكم شرف لنا</p>
     </div>
 
     <script>
         setTimeout(function() {
-            window.location.href = "inde.html"; // رابط الصفحة الرئيسية
-        }, 3000); // 3000 مللي ثانية = 5 ثوانٍ
+            window.location.href = "inde.html"; // URL of the main page
+        }, 3000); // 3000 milliseconds = 3 seconds
     </script>
 </body>
+
+</html>
+
 
 </html>
