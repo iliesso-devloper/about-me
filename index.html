@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="11.png">
+</head>
+<style>
+    body {
+        font-family: 'Tajawal', sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .profile-img {
+        width: 300px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .project {
+        flex: 1 1 300px;
+        margin: 10px;
+        padding: 10px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .project img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .gallery-section {
+        margin: 40px 0;
+        text-align: center;
+    }
+    
+    .gallery-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    .gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .gallery img {
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        position: relative;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .social-media a {
+        margin: 0 10px;
+        color: #fff;
+    }
+    
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .gallery img {
+        width: 200px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">عنّي</a></li>
+                <li><a href="#portfolio">أعمالي</a></li>
+                <li><a href="#gallery-section">اختصاصاتي</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>مرحبا، أنا بن لزرق عبد الرحمان الياس</h1>
+        <p>طالب جامعي متخصص في اعلامي الي حبي لهذا المجال'مجال التطوير' جعلني اتخصص في عالم تطوير المواقع و قدرني على انشاء مواقع ويب و اضع تحت تصرفكم بعض من اهم اعمالي</p>
+        <img src="11.png" alt="صورة شخصية" class="profile-img">
+    </section>
+
+    <section id="portfolio">
+        <h2>أعمالي</h2>
+        <div class="projects">
+            <div class="project" data-link="https://mouloudia-actualites.netlify.app/">
+                <img src="https://mouloudia-actualites.netlify.app/logo.png" alt="مشروع 1">
+                <h3>موقع رياضي لصفحة فايسبوك</h3>
+                <p>موقع خاص بمحبي فريق مولودية الجزائر و متتبعي صفحة</p>
+            </div>
+            <div class="project" data-link="https://rayhane-centre.github.io/rayhen/inde.html">
+                <img src="https://rayhane-centre.github.io/rayhen/ray.png" alt="مشروع 2">
+                <h3>موقع خاص بمركز الريحان للتعليم و التكوين</h3>
+                <p>وصف المشروع.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h2>اختصاصاتي</h2>
+        <div class="gallery">
+            <img src="web.png" alt="صورة 1"><br>
+            <img src="ph.png" alt="صورة 2"><br>
+            <img src="mark.png" alt="صورة 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بي</h2>
+        <p>يمكنك التواصل معي عبر البريد الإلكتروني
+            <br><a href="mailto:iliesbenlazrague@gmail.com">iliesbenlazrague@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://web.telegram.org/a/#5562715176" target="_blank">
+                <img src="ff.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="tel:0774317062" target="_blank">
+                <img src="tt.png" alt="Phone Call" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/prv.iliesso/" target="_blank">
+                <img src="ii.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 iliesso. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var projects = document.querySelectorAll('.project');
+            projects.forEach(function(project) {
+                project.addEventListener('click', function() {
+                    window.location.href = this.getAttribute('data-link');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
